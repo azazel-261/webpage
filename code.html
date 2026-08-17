@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-900">
+    <div class="main">
+        <div class="flex flex-row flex-wrap bg-gray-800">
+            <div class="flex grow">
+                <a href="/index.html" class="p-5 object-scale-down">
+                    <p class="text-2xl text-white hover:underline font-mono">zyazya.dev</p>
+                </a>
+            </div>
+            <div class="flex flex-row flex-wrap p-5 space-x-2">
+                <a class="border border-transparent rounded-sm text-white p-1 hover:border-cyan-700 hover:underline font-mono"
+                    href="/code.html">Code</a>
+                <a class="border border-transparent rounded-sm text-white p-1 hover:border-cyan-700 hover:underline font-mono"
+                    href="/art.html">Art</a>
+                <a class="border border-transparent rounded-sm text-white p-1 hover:border-cyan-700 hover:underline font-mono"
+                    href="/contact.html">Socials/Contact</a>
+            </div>
+        </div>
+        <div class="mx-auto my-5 max-w-300">
+            <div class="mx-5 space-y-3">
+                <p class="text-white text-2xl font-bold">About my code</p>
+                <p class="text-white">My language stack mainly includes the following languages:</p>
+                <ul class="text-white list-disc">
+                    <li>C/C++</li>
+                    <li>64-bit ASM</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+                <p class="text-white">I also use/learn other languages, though not as often</p>
+                <div>
+                    <hr class="border border-gray-800">
+                </div>
+                <p class="text-white text-2xl font-bold">Notable projects</p>
+                <p class="text-white text-xl font-bold">GrapherToolkit</p>
+                <img src="res/graphertoolkit.jpg" class="size-full object-scale-down" />
+                <p class="text-white">
+                    GrapherToolkit is a C++/GTKMM app that graphs a given function f(x).
+                    It includes a written from scratch library that parses a c-string into a recursive object
+                    representation of said function. Built for Summer 2026 class of PW
+                </p>
+                <div>
+                    <a href="https://github.com/azazel-261/GrapherToolkit"
+                        class="italic text-white hover:underline">source (click me!)</a>
+                </div>
+                <div>
+                    <hr class="border border-gray-800">
+                </div>
+                <p class="text-white text-xl font-bold">AutoMinesweeper</p>
+                <img src="res/autominesweeper.png" class="size-full object-scale-down" />
+                <p class="text-white">
+                    A lot less serious of a project of mine, AutoMinesweeper is a Python script uses simple algorithms and PyAutoGUI to play the game of Google's browser game Minesweeper.
+                    It is, however, purely deterministic, and will never attempt to guess
+                </p>
+                <div>
+                    <a href="https://github.com/azazel-261/AutoMinesweeper"
+                        class="italic text-white hover:underline">source (click me!)</a>
+                </div>
+                <div>
+                    <hr class="border border-gray-800">
+                </div>
+                <p class="text-white italic">More to come...</p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="p-3 flex flex-row flex-wrap bg-gray-800 justify-center">
+        <p class="text-white font-mono">Created using tailwind css. Zyazya, 2026</p>
+    </div>
+</footer>
+
+</html>
