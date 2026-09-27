@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* 
+Forgive, i'm lazy, so CSS is pretty minimal :')
+Tailwind has been used in places where i didn't wanna bother writing a class for a single property like flex, margin, etc.
+*/
+
 body {
     min-height: 100vh;
     display: flex;
@@ -7,6 +12,63 @@ body {
 }
 
 .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #223735;
     flex: 1;
 }
+
+.separator {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #465850;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #465850;
+}
+
+.barbutton {
+    padding: 4px;
+    border-color: transparent;
+    border-width: 1px;
+    text-decoration-line: none;
+}
+
+.barbutton:hover {
+    border-color: white;
+    text-decoration-line: underline;
+}
+
+.mono {
+    font-family: monospace;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.link {
+    text-decoration-line: none;
+}
+
+.link:hover {
+    text-decoration-line: underline;
+}
+
+.bottombar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+
+    background-color: #465850;
+}
+
+
 
