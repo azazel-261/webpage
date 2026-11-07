@@ -9,35 +9,80 @@
 <body>
     <div id="mainBanner" style="position: relative;">
         <div id="header">
-            <a href="/" id="rootLinkContainer">
-                <div id="rootLink">Zyazya.dev</div>
+            <a href="/" style="text-decoration: none;">
+                <div id="navLink">Zyazya.dev</div>
             </a>
         </div>
         <div id="bannerText" class="noselect">
-            Personal space
+            Hello! I'm <strong>Azazel_261</strong>
         </div>
         <div style="height: 8%; width: 100vw; position: absolute; bottom: 0; left: 0; background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));"></div>
     </div>
     <div class="defaultMargin adaptiveContainer" style="border-top: 2px; border-bottom: 2px; border-color: black; border: solid;">
-        <button class="navButton" id="aboutBtn" style="flex-grow: 1;"><p class="regularText">About me</p></button>
-        <button class="navButton" id="codeBtn" style="flex-grow: 1;"><p class="regularText">Code</p></button>
-        <button class="navButton" id="artBtn" style="flex-grow: 1;"><p class="regularText">Art</p></button>
-        <button class="navButton" id="contactBtn" style="flex-grow: 1;"><p class="regularText">Contact me</p></button>
+        <button class="navButton active" id="aboutBtn" style="flex-grow: 1;" onclick="showSection('about')"><p class="regularText">About me</p></button>
+        <button class="navButton" id="codeBtn" style="flex-grow: 1;" onclick="showSection('code')"><p class="regularText">Code</p></button>
+        <button class="navButton" id="artBtn" style="flex-grow: 1;" onclick="showSection('art')"><p class="regularText">Art</p></button>
+        <button class="navButton" id="contactBtn" style="flex-grow: 1;" onclick="showSection('contact')"><p class="regularText">Contact me</p></button>
     </div>
-    <div class="defaultPadding defaultSpacing adaptiveContainer">
-        <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
-            <img src="res/me.png" id="pfp"/>
-            <p>Picture by Kirerin on artfight</p>
-        </div>
-        <div class="verticalContainer defaultSpacing">
-            <div>
-                <p class="largeText inline">Nice to meet you! My name is <strong>Zyazya/Azazel_261</strong></p>
+    <div class="toggleableSection defaultMargin defaultSpacing active" id="about">
+        <div class="defaultSpacing adaptiveContainer">
+            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
+                <img src="res/me.png" id="pfp"/>
+                <p>Picture by Kirerin on artfight</p>
             </div>
-            <p class="regularText">This website will (hopefully) show you some useful information about me, and what i do. If you couldn't tell by now, 
-                web design isn't my greatest skill, but i hope that by the end of this, you'd agree that i have something to show instead
-            </p>
+            <div class="verticalContainer defaultSpacing">
+                <div>
+                    <p class="largeText inline">Nice to meet you! My name is <strong>Zyazya/Azazel_261</strong></p>
+                </div>
+                <p class="regularText">This website will (hopefully) show you some useful information about me, and what i do. If you couldn't tell by now, 
+                    web design isn't my greatest skill, but i hope that by the end of this, you'd agree that i have something to show instead
+                </p>
+            </div>
         </div>
+        <p class="largeText" style="margin-top: 10px; margin-bottom: 10px;"><strong>Main info:</strong></p>
+        <p class="regularText">I'm 18 y/o Computer Science major, on the 2nd year of my bachelor's. 
+            I spend a lot of my free time coding projects like this website,
+            learning languages or skills, and playling games</p>
+        <p class="largeText" style="margin-top: 10px; margin-bottom: 10px;"><strong>Language proficiency:</strong></p>
+        <div class="wrappingContainer defaultSpacing">
+            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
+                <img class="flag" src="res/ua.png"/>
+                <p><strong>Ukrainian: Native</strong></p>
+            </div>
+            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
+                <img class="flag" src="res/ru.png"/>
+                <p><strong>Russian: Bilingual</strong></p>
+            </div>
+            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
+                <img class="flag" src="res/gb.png"/>
+                <p><strong>English: C1</strong></p>
+            </div>
+            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
+                <img class="flag" src="res/pl.png"/>
+                <p><strong>Polish: B2</strong></p>
+            </div>
+            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
+                <img class="flag" src="res/jp.png"/>
+                <p><strong>Japanese: JLPT N5</strong></p>
+            </div>
+        </div>
+        <p class="largeText" style="margin-top: 10px; margin-bottom: 10px;"><strong>A word about my hobbies:</strong></p>
+        <p class="regularText">Amongst others things, i like </p>
+        <ul>
+            <li class="regularText">Coding! <p class="inline" style="color: gray;">(obviously, check "Code" for more)</p></li>
+            <li class="regularText">Digital art<p class="inline" style="color: gray;">, check "Art" for more</p></li>
+            <li class="regularText">Photography</li>
+            <li class="regularText">Playing osu! <p class="inline" style="color: gray;">(lazer refugee getting used to stable)</p></li>
+            <li class="regularText">Learning languages</li>
+        </ul>
     </div>
+    <div class="toggleableSection defaultMargin" id="code">Code</div>
+    <div class="toggleableSection defaultMargin" id="art">Art</div>
+    <div class="toggleableSection defaultMargin" id="contact">Contact</div>
 </body>
+<div class="horizontalLine" style="margin-top: 25px;"></div>
+<footer class="defaultSpacing" style="display: flex; justify-content: center; text-align: center; padding: 5px;">
+    <p>Zyazya, 2026. Hosted on <strong>GitHub Pages</strong>. The header background is random each time you load the page!</p>
+</footer>
 
 </html>
