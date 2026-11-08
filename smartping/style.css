@@ -35,3 +35,35 @@ p {
     min-height: 100vh;
     background-color: white;
 }
+
+.linkBtn {
+    border: 3px;
+    border-color: #354b45;
+    transition: .3s;
+    border-style: solid;
+    border-radius: 30px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding-right: 15px;
+    color: #354b45;
+}
+
+.linkBtn p {
+    color: #354b45;
+    transition: .3s;
+}
+
+.linkBtn:hover {
+    background-color: #354b45;
+    transition: .3s;
+}
+
+.linkBtn:hover p {
+    color: white;
+    transition: .3s;
+}
