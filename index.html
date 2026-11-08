@@ -4,6 +4,7 @@
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zyazya.dev</title>
 </head>
 
 <body>
@@ -45,24 +46,24 @@
             learning languages or skills, and playling games</p>
         <p class="largeText" style="margin-top: 10px; margin-bottom: 10px;"><strong>Language proficiency:</strong></p>
         <div class="wrappingContainer defaultSpacing">
-            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
-                <img class="flag" src="res/ua.png"/>
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/ua.png"/>
                 <p><strong>Ukrainian: Native</strong></p>
             </div>
-            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
-                <img class="flag" src="res/ru.png"/>
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/ru.png"/>
                 <p><strong>Russian: Bilingual</strong></p>
             </div>
-            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
-                <img class="flag" src="res/gb.png"/>
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/gb.png"/>
                 <p><strong>English: C1</strong></p>
             </div>
-            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
-                <img class="flag" src="res/pl.png"/>
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/pl.png"/>
                 <p><strong>Polish: B2</strong></p>
             </div>
-            <div class="verticalContainer" style="width: fit-content; height: fit-content ;text-align: center; align-items: center;">
-                <img class="flag" src="res/jp.png"/>
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/jp.png"/>
                 <p><strong>Japanese: JLPT N5</strong></p>
             </div>
         </div>
@@ -76,9 +77,126 @@
             <li class="regularText">Learning languages</li>
         </ul>
     </div>
-    <div class="toggleableSection defaultMargin" id="code">Code</div>
-    <div class="toggleableSection defaultMargin" id="art">Art</div>
-    <div class="toggleableSection defaultMargin" id="contact">Contact</div>
+    <div class="toggleableSection defaultMargin defaultSpacing" id="code">
+        <p class="largeText"><strong>Code</strong></p>
+        <p class="regularText" style="margin-top: 10px; margin-bottom: 10px;">My primary stack includes the following languages: </p>
+        <div class="wrappingContainer defaultSpacing">
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/python.webp"/>
+                <p><strong>Python</strong></p>
+            </div>
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/cpp.webp"/>
+                <p><strong>C++</strong></p>
+            </div>
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/c.webp"/>
+                <p><strong>C</strong></p>
+            </div>
+            <div class="verticalContainer centerContent">
+                <img class="flag" src="res/icons/java.png"/>
+                <p><strong>Java</strong></p>
+            </div>
+        </div>
+        <p class="regularText" style="margin-top: 10px; margin-bottom: 10px;">I can also use other languages, like C#/ASM, but not as often. I'm a devoted JetBrains user and use their IDEs wherever possible</p>
+        <p class="largeText" style="margin-top: 20px; margin-bottom: 20px;"><strong>Notable projects:</strong></p>
+        <div class="adaptiveContainer defaultSpacing">
+            <img class="preview" src="res/graphertoolkit.jpg"/>
+            <div class="verticalContainer defaultSpacing">
+                <p class="largeText">GrapherToolkit</p>
+                <p class="regularText"><strong>GrapherToolkit</strong> is a C++/GTKMM desktop app that evaluates and draws a graph for a given function f(x).
+                It operates on top of a written-from-scratch library that recursively parses a string into an object model, 
+                then evaluates the function, before disaplying it through a custom GTKMM component. The library supports basic operations, as well as more complex, such as sin, cos, ln, etc.</p>
+                <a href="https://github.com/azazel-261/GrapherToolkit" style="text-decoration: none;" class="linkBtn">
+                    <img class="icon" src="res/icons/github.png"/>
+                    <p><strong>View on GitHub</strong></p>
+                </a>
+            </div>
+        </div>
+        <div class="adaptiveContainer defaultSpacing" style="margin-top: 10px;">
+            <img class="preview" src="res/smartping.png"/>
+            <div class="verticalContainer defaultSpacing">
+                <p class="largeText">SmartPing</p> <!--TODO: smartping webpage-->
+                <p class="regularText">SmartPing is a discord bot designed to solve discord's group pings. Roles no longer cut it when you need
+                    to create one for every new group that needs a separate pings. SmartPing organizes users into internal groups for easy management and seamless pings
+                </p>
+                <a href="/smartping" style="text-decoration: none;" class="linkBtn">
+                    <img class="icon" src="res/icons/magnifying_glass.png"/>
+                    <p><strong>Learn more</strong></p>
+                </a>
+            </div>
+        </div>
+        <div class="adaptiveContainer defaultSpacing" style="margin-top: 10px;">
+            <img class="preview" src="res/minibeat.png"/>
+            <div class="verticalContainer defaultSpacing">
+                <p class="largeText">MiniBeat</p>
+                <p class="regularText">MiniBeat is a small osu!mania inspired rhythm game, made in C# + Raylib. It uses simple JSON files to store and load maps</p>
+                <a href="/minibeat" style="text-decoration: none;" class="linkBtn">
+                    <img class="icon" src="res/icons/magnifying_glass.png">
+                    <p><strong>Learn more</strong></p>
+                </a>
+            </div>
+        </div>
+        <div class="adaptiveContainer defaultSpacing" style="margin-top: 10px;">
+            <img class="preview" src="res/minesweeper.webp"/>
+            <div class="verticalContainer defaultSpacing">
+                <p class="largeText">Auto Minesweeper</p>
+                <p class="regularText">Made over a span for 12 hours for no particular reason, auto minesweeper is a small python script that
+                    attempts to solve google's browser version of minesweeper. It is purely deterministic and will never attempt to guess
+                </p>
+                <a href="https://github.com/azazel-261/AutoMinesweeper" style="text-decoration: none;" class="linkBtn">
+                    <img src="res/icons/github.png" class="icon"/>
+                    <p><strong>View on GitHub</strong></p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="toggleableSection defaultMargin" id="art">
+        <p class="largeText"><strong>Art</strong></p>
+        <p class="regularText" style="margin-top: 10px; margin-bottom: 10px;">Unlike coding, drawing and creative expression in general weren't in my life as early and aren't as fundamental, but most
+            certainly worth talking about, hence the existence of this tab. Having first started around 2022, i'm a beginner to intermediate primarily digital artist
+        </p>
+        <p class="largeText">Instuments/software:</p>
+        <ul>
+            <li class="regularText">iPad air + Procreate when on the go</li>
+            <li class="regularText">CSP + a screenless tablet when on my laptop</li>
+            <li class="regularText">Any functioning pen + a piece of paper. Suck it ai "artists" :P</li>
+        </ul>
+        <p class="largeText">Where to find my art:</p>
+        <p class="regularText" style="margin-top: 10px;">Although i don't have many explicitly "social network" ways of sharing my art, you can look at some of my drawings on my accounts here:</p>
+        <ul style="gap: 5px;">
+            <li>
+                <div class="horizontalContainer centerContent" style="gap: 10px;">
+                    <p class="regularText">My telegram channel: </p>
+                    <a href="https://theartofprogress.t.me" style="text-decoration: none;" class="linkBtn">
+                        <img src="res/icons/telegram.png" class="icon"/>
+                        <p><strong>Open Telegram</strong></p>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="horizontalContainer centerContent" style="gap: 10px;">
+                    <p class="regularText">My ArtFight profile: </p>
+                    <a href="https://artfight.net/~azazel_261" style="text-decoration: none;" class="linkBtn">
+                        <p><strong>Open artfight.net</strong></p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <p class="largeText"><strong>Photography</strong></p>
+        <p class="regularText" style="margin-top: 10px; margin-bottom: 10px;">I go about life taking pictures with my phone's camera, purely as a hobby. However, i do post some of my photos on my instagram profile here</p>
+        <a href="https://www.instagram.com/azazel_261/" style="text-decoration: none;" class="linkBtn">
+            <img src="res/icons/instagram.png" class="icon"/>
+            <p><strong>Open instagram</strong></p>
+        </a>
+    </div>
+    <div class="toggleableSection defaultMargin" id="contact">
+        <p class="largeText"><strong>Contact</strong></p>
+        <p class="regularText">Should you ever need to get in touch with me, feel free to use any of these:</p>
+        <p class="regularText">Email: <a style="color: black;" href="mailto:main@zyazya.dev">main@zyazya.dev</a></p>
+        <p class="regularText">Discord: @goodnewsteller</p>
+        <p class="regularText">BlueSky: <a style="color: black;" href="https://bsky.app/profile/goodnewsteller.bsky.social">goodnewsteller.bsky.social</a></p>
+    </div>
 </body>
 <div class="horizontalLine" style="margin-top: 25px;"></div>
 <footer class="defaultSpacing" style="display: flex; justify-content: center; text-align: center; padding: 5px;">
